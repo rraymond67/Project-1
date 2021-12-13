@@ -103,6 +103,8 @@
 
 ### Wiredframes
 
+![webimage]("/thunder/unit_1/Project-1/assets/untitled.png")
+
 ### MVP:
 
 - **Add a gif background similar to the comic pages**
@@ -147,4 +149,4 @@
 | CSS styling for backgound images                         |    L     |      3hrs      |
 | Create buttom to save favorite heroes                    |    L     |      3hrs      |
 | Create an interactive serch botton                       |    L     |      3hrs      |
-| Total                                                    |    H     |      hrs       |
+| Total                                                    |    H     |     40hrs      |
