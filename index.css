@@ -1,0 +1,30 @@
+body {
+  background-image: url("./assets/HARRY.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+h1, h2, h3{
+  color: aliceblue;
+}
+
+#info-house{
+  bottom: 1000px;
+}
+.character-list{
+  background-image: url("./assets/book.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#character-data{
+  flex-wrap: wrap;
+}
+
+.search-section, header{
+  text-align: center;
+}
+button{
+  text-align: center;
+}

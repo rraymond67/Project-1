@@ -1,117 +1,114 @@
 # App Title: The Hall of Heroes
 
-### App Description: A web application that serves as a library for most of the comic book superheors created. The user wil be able to search any comic book heroes by name and it will return their alias name, their superpowers and the first comic issue they appeared in for whichever publisher.
+### App Description: A web application that serves as a library for most of the character in the world of Harry Potter.The user will be able to search any character by name and it will return their image, their house, theri ancestry, their wand type and the real name of the actor.
 
-### API: https://comicvine.com/api/
+### API: http://hp-api.herokuapp.com/api/characters
 
 ### API Snippet:
 
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<response>
-    <error>
-        <![CDATA[OK]]>
-    </error>
-    <limit>100</limit>
-    <offset>0</offset>
-    <number_of_page_results>100</number_of_page_results>
-    <number_of_total_results>148269</number_of_total_results>
-    <status_code>1</status_code>
-    <results>
-        <character>
-            <aliases/>
-            <api_detail_url>
-                <![CDATA[https://comicvine.gamespot.com/api/character/4005-168397/]]>
-            </api_detail_url>
-            <birth/>
-            <count_of_issue_appearances>2</count_of_issue_appearances>
-            <date_added>2021-04-09 18:21:09</date_added>
-            <date_last_updated>2021-04-20 11:14:01</date_last_updated>
-            <deck/>
-            <description/>
-            <first_appeared_in_issue>
-                <api_detail_url>
-                    <![CDATA[https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-737752/]]>
-                </api_detail_url>
-                <id>737752</id>
-                <name>
-                    <![CDATA[Into the Crucible Part One: The People's Champion]]>
-                </name>
-                <issue_number>13</issue_number>
-            </first_appeared_in_issue>
-            <gender>2</gender>
-            <id>168397</id>
-            <image>
-                <icon_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/square_avatar/11140/111402998/7903705-banti.jpg]]>
-                </icon_url>
-                <medium_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/scale_medium/11140/111402998/7903705-banti.jpg]]>
-                </medium_url>
-                <screen_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/screen_medium/11140/111402998/7903705-banti.jpg]]>
-                </screen_url>
-                <screen_large_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/screen_kubrick/11140/111402998/7903705-banti.jpg]]>
-                </screen_large_url>
-                <small_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/scale_small/11140/111402998/7903705-banti.jpg]]>
-                </small_url>
-                <super_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/scale_large/11140/111402998/7903705-banti.jpg]]>
-                </super_url>
-                <thumb_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/scale_avatar/11140/111402998/7903705-banti.jpg]]>
-                </thumb_url>
-                <tiny_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/square_mini/11140/111402998/7903705-banti.jpg]]>
-                </tiny_url>
-                <original_url>
-                    <![CDATA[https://comicvine.gamespot.com/a/uploads/original/11140/111402998/7903705-banti.jpg]]>
-                </original_url>
-                <image_tags>
-                    <![CDATA[All Images]]>
-                </image_tags>
-            </image>
-            <name>
-                <![CDATA[ Banti]]>
-            </name>
-            <origin>
-                <api_detail_url>
-                    <![CDATA[https://comicvine.gamespot.com/api/origin/4030-4/]]>
-                </api_detail_url>
-                <id>4</id>
-                <name>
-                    <![CDATA[Human]]>
-                </name>
-            </origin>
-            <publisher>
-                <api_detail_url>
-                    <![CDATA[https://comicvine.gamespot.com/api/publisher/4010-31/]]>
-                </api_detail_url>
-                <id>31</id>
-                <name>
-                    <![CDATA[Marvel]]>
-                </name>
-            </publisher>
-            <real_name/>
-            <site_detail_url>
-                <![CDATA[https://comicvine.gamespot.com/banti/4005-168397/]]>
-            </site_detail_url>
-        </character>
+[
+    {
+        "name": "Harry Potter",
+        "alternate_names": [
+            ""
+        ],
+        "species": "human",
+        "gender": "male",
+        "house": "Gryffindor",
+        "dateOfBirth": "31-07-1980",
+        "yearOfBirth": 1980,
+        "wizard": true,
+        "ancestry": "half-blood",
+        "eyeColour": "green",
+        "hairColour": "black",
+        "wand": {
+            "wood": "holly",
+            "core": "phoenix feather",
+            "length": 11
+        },
+        "patronus": "stag",
+        "hogwartsStudent": true,
+        "hogwartsStaff": false,
+        "actor": "Daniel Radcliffe",
+        "alternate_actors": [
+            ""
+        ],
+        "alive": true,
+        "image": "http://hp-api.herokuapp.com/images/harry.jpg"
+    },
+    {
+        "name": "Hermione Granger",
+        "alternate_names": [
+            ""
+        ],
+        "species": "human",
+        "gender": "female",
+        "house": "Gryffindor",
+        "dateOfBirth": "19-09-1979",
+        "yearOfBirth": 1979,
+        "wizard": true,
+        "ancestry": "muggleborn",
+        "eyeColour": "brown",
+        "hairColour": "brown",
+        "wand": {
+            "wood": "vine",
+            "core": "dragon heartstring",
+            "length": ""
+        },
+        "patronus": "otter",
+        "hogwartsStudent": true,
+        "hogwartsStaff": false,
+        "actor": "Emma Watson",
+        "alternate_actors": [
+            ""
+        ],
+        "alive": true,
+        "image": "http://hp-api.herokuapp.com/images/hermione.jpeg"
+    },
+    {
+        "name": "Ron Weasley",
+        "alternate_names": [
+            ""
+        ],
+        "species": "human",
+        "gender": "male",
+        "house": "Gryffindor",
+        "dateOfBirth": "01-03-1980",
+        "yearOfBirth": 1980,
+        "wizard": true,
+        "ancestry": "pure-blood",
+        "eyeColour": "blue",
+        "hairColour": "red",
+        "wand": {
+            "wood": "willow",
+            "core": "unicorn tail-hair",
+            "length": 14
+        },
+        "patronus": "Jack Russell terrier",
+        "hogwartsStudent": true,
+        "hogwartsStaff": false,
+        "actor": "Rupert Grint",
+        "alternate_actors": [
+            ""
+        ],
+        "alive": true,
+        "image": "http://hp-api.herokuapp.com/images/ron.jpg"
+    },
+    {
 ```
 
 ### Wiredframes
 
-![webimage]("/thunder/unit_1/Project-1/assets/untitled.png")
+![webimage](./assets/Webpage.png)
 
 ### MVP:
 
-- **Add a gif background similar to the comic pages**
-- **Add a character place holder which will be a simple gray figure that will fade away to the seacrh hero**
-- **Add a text description of the superhero power**
-- **Add a favorite superhero favorite button**
-- **Put the superhero name, theri alias and the first comic they appeared in**
+- **Add a gif background of the Hogwarts School**
+- **Add a frame where the picture of the search result will appear**
+- **Add a text description of the character searched**
+- **Add a favorite character button**
+- **Put the character name, their alias and what house they are from**
 
 ### Post-MVP:
 
@@ -130,7 +127,7 @@
 
 ### Priority Matrix:
 
-![Matrix](https://whimsical.com/097ecbe8-a1a8-46f2-a572-a553e35944b9)
+![Matrix](./assets/Mission.png)
 
 ### Timeframes:
 
