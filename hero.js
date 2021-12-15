@@ -83,6 +83,3 @@ function removeCharacter() {
 function removeHouse() {
   characterHouse.innerHTML = "";
 }
-
-
-
