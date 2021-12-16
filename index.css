@@ -4,20 +4,96 @@ body {
   background-size: cover;
   height: 100%;
 }
-h1, h2, h3{
+h1{
   color: aliceblue;
+  font-family: 'swap';
 }
 
+h2{
+  color: black;
+  font-family: 'Henny Penny';
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3{
+  color: black;
+}
 .character-list{
+  margin: 50px;
   background-image: url("./assets/book.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 600px;
+  display: none;
 }
 
-.search-section, header{
+.search-section, header, button{
   text-align: center;
 }
-button{
-  text-align: center;
+
+#character-data{
+  display: flex;
+  align-items:center;
+  flex-flow: wrap column;
+  position: absolute;
+  top: 1%;
+  left: 35%;
+  max-width: 350px;
 }
+
+#info-house{
+  position: absolute;
+  left: 55%;
+  top: 6%;
+}
+#text-info{
+  flex-wrap: wrap;
+  position: absolute;
+  left: 54%; 
+  top: 45%;
+}
+
+.houseImage{
+  max-height: 250px;
+}
+.student{
+  text-align: center;
+  max-height: 300px; 
+  max-width: 200px;
+}
+.text-book{
+  text-align: center;
+  font-size: 25px;
+  width: 240px;
+  font-family: 'Henny Penny';
+}
+.name{
+  text-align: center;
+  max-height: 500px;
+  max-width: 300px;
+}
+
+#search{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #1eed52;
+  border-radius:25px;
+  box-sizing: border-box;
+  text-decoration:gray;
+  font-family:'Henny Penny';
+  font-weight:300;
+  color:gold;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: black;
+}
+    #search:hover{
+      color:#000000;
+      background-color: goldenrod;
+    }
+

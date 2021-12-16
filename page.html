@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="hero.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet">
     <link rel="stylesheet" href="index.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <title>hogwarts School </title>
   </head>
   <header>
     <h1>THE HALL 
-      <h2>OF</h2>
+      <h1>OF</h1>
       <H1>SORCERES</H1>
     </h1>
   </header>
   <body>
+    <embed src="./assets/song.mp3" loop="true" autostart="true" width="2" height="0">
     <div class="search-section">
         <input type="text" id="blank" placeholder="Hero Name">
         <button id="search">AbracadabrA</button> 
     </div>
-
-    
-
     <section class="character-list">
       <!-- <img class="book" src="./assets/book.png" alt="Open book"> -->
-      <section class="pages"> 
         <div id="character-data"></div>
-        <div id="info-house"></div>
-      </section>  >
-         
+        <div id="info-house"></div> 
+        <div id="text-info" ></div>
     </section>
   </body>
 </html>
