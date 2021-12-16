@@ -6,7 +6,7 @@ const textBook = document.querySelector('#text-info')
 
 async function listCharacter() {
   try {
-    const url = `http://hp-api.herokuapp.com/api/characters`;
+    const url = `https://hp-api.herokuapp.com/api/characters`;
     const res = await axios.get(url);
     const characterData = res.data; // the brackeet makes sure you acces the info inside the data array it fetches 
     let inputValue = searchInput.value
