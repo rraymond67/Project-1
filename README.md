@@ -1,6 +1,6 @@
 # App Title: The Hall of Heroes
 
-### App Description: A web application that serves as a library for most of the character in the world of Harry Potter.The user will be able to search any character by name and it will return their image, their house, theri ancestry, their wand type and the real name of the actor.
+### App Description: A web application that serves as a library for most of the character in the world of Harry Potter.The user will be able to search any character by name and it will return their picture, the house they belong to, their ancestry, and the real name of the actor.
 
 ### API: http://hp-api.herokuapp.com/api/characters
 
@@ -102,27 +102,30 @@
 
 ![webimage](./assets/Webpage.png)
 
+![real website](./assets/Website.png)
+
 ### MVP:
 
 - **Add a gif background of the Hogwarts School**
-- **Add a frame where the picture of the search result will appear**
+- **Add a book where the search result will appear**
 - **Add a text description of the character searched**
-- **Add a favorite character button**
 - **Put the character name, their alias and what house they are from**
+- **Add a special effect for the search buttons**
 
 ### Post-MVP:
 
-- **Add a special effect for the search buttons**
+**Add music to the background**
+**Add a favorite character button**
 
 ### Goals:
 
-| Day    | Deliverable                                       | Status |
-| ------ | ------------------------------------------------- | ------ |
-| Dec 12 | API Search/ Repo ReadMe/                          |
-| Dec 13 | Student inputs/ Poject Approval                   |
-| Dec 14 | HTML Setup/ Js setup/ Result from Api/ Pseudocode |
-| Dec 15 | MVP implimantation/ Post MVP                      |
-| Dec 16 | CSS styling/ add more Post MVP if possible        |
+| Day    | Deliverable                                       | Status   |
+| ------ | ------------------------------------------------- | -------- |
+| Dec 12 | API Search/ Repo ReadMe/                          | complete |
+| Dec 13 | Student inputs/ Poject Approval                   | complete |
+| Dec 14 | HTML Setup/ Js setup/ Result from Api/ Pseudocode | complete |
+| Dec 15 | MVP implimantation/ Post MVP                      | complete |
+| Dec 16 | CSS styling/ add more Post MVP if possible        | complete |
 | Dec 17 | Presentations                                     |
 
 ### Priority Matrix:
@@ -131,19 +134,18 @@
 
 ### Timeframes:
 
-| Component                                                | Priority | Estimated Time | Time Invested | Actual Time |
-| -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML, CSS, JS setup                                |    M     |      1hrs      |
-| Setting up API and axios function                        |    H     |      4hrs      |
-| Response data setup/fetching                             |    H     |      2hrs      |
-| Filter through the response data                         |    H     |      3hrs      |
-| Add data to axios function                               |    H     |      3hrs      |
-| Incorporating the user input and API call                |    H     |      4hrs      |
-| Debugging of the user input/API call                     |    H     |      2hrs      |
-| Add placeholder superhero figure                         |    M     |      3hrs      |
-| Web page layout                                          |    H     |      3hrs      |
-| CSS styling of heros information from search API results |    M     |      6hrs      |
-| CSS styling for backgound images                         |    L     |      3hrs      |
-| Create buttom to save favorite heroes                    |    L     |      3hrs      |
-| Create an interactive serch botton                       |    L     |      3hrs      |
-| Total                                                    |    H     |     40hrs      |
+| Component                                             | Priority | Estimated Time | Time Invested |
+| ----------------------------------------------------- | :------: | :------------: | :-----------: |
+| Basic HTML, CSS, JS setup                             |    M     |      1hrs      |      1hr      |
+| Setting up API and axios function                     |    H     |      4hrs      |     4hrs      |
+| Response data setup/fetching                          |    H     |      2hrs      |     3hrs      |
+| Filter through the response data                      |    H     |      3hrs      |     4hrs      |
+| Set up the reponse to HTML                            |    H     |      3hrs      |     2hrs      |
+| Incorporating the user input and API call             |    H     |      4hrs      |     3hrs      |
+| Debugging of the user input/API call                  |    H     |      2hrs      |     3hrs      |
+| Web page layout                                       |    H     |      3hrs      |     6hrs      |
+| CSS styling of character info from search API results |    M     |      6hrs      |     8hrs      |
+| CSS styling for backgound images                      |    L     |      3hrs      |     2hrs      |
+| Create buttom to save favorite character              |    L     |      3hrs      |     2hrs      |
+| Create an interactive serch botton                    |    L     |      3hrs      |     2hrs      |
+| Total                                                 |    H     |     37hrs      |     40hrs     |

@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 h1{
   color: aliceblue;
@@ -21,7 +22,7 @@ h3{
   color: black;
 }
 .character-list{
-  margin: 50px;
+  margin-top: 50px;
   background-image: url("./assets/book.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,9 +38,7 @@ h3{
 }
 
 #character-data{
-  display: flex;
-  align-items:center;
-  flex-flow: wrap column;
+  justify-content: center;
   position: absolute;
   top: 1%;
   left: 35%;
@@ -78,6 +77,30 @@ h3{
   max-width: 300px;
 }
 
+.favorites{
+  margin: 20px;
+  text-align: center;
+}
+
+
+#heart{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #1eed52;
+  border-radius:25px;
+  box-sizing: border-box;
+  text-decoration:gray;
+  font-family:'Henny Penny';
+  color:gold;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: black;
+}
+#heart:hover{
+  color:#000000;
+  background-color: white;
+}
+
 #search{
   display:inline-block;
   padding:0.35em 1.2em;
@@ -86,7 +109,6 @@ h3{
   box-sizing: border-box;
   text-decoration:gray;
   font-family:'Henny Penny';
-  font-weight:300;
   color:gold;
   text-align:center;
   transition: all 0.2s;
@@ -97,3 +119,54 @@ h3{
       background-color: goldenrod;
     }
 
+
+@media screen and (max-width: 500px){
+  body{
+    color: red !important;
+  }
+
+  .houseImage{
+  max-height: 100px;
+}
+.student{
+  text-align: center;
+  max-height: 100px; 
+  max-width: 150px;
+}
+.text-book{
+  text-align: center;
+  font-size: 16px;
+  width: 140px;
+  font-family: 'Henny Penny';
+}
+.name{
+  color: red;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#character-data{
+  display: flex;
+  align-items:center;
+  flex-flow: wrap column;
+  position: absolute;
+  top: 20%;
+  left: 14%;
+  max-width: 188px;
+}
+
+#info-house{
+  position: absolute;
+  left: 60%;
+  top: 26%;
+}
+#text-info{
+  flex-wrap: wrap;
+  position: absolute;
+  left: 54%; 
+  top: 45%;
+}
+    }

@@ -2,17 +2,22 @@ const characterDiv = document.querySelector("#character-data");
 const searchSection = document.querySelector("#search");
 const characterHouse = document.querySelector("#info-house");
 const searchInput = document.querySelector("#blank");
-const textBook = document.querySelector('#text-info')
+const textBook = document.querySelector('#text-info');
+const favorite = document.querySelector("#heart");
+const showFavorite = document.querySelector("#fav-button");
+let favCharacter = [];
 
-async function listCharacter() {
+async function listCharacter(fav) {
   try {
     const url = `https://hp-api.herokuapp.com/api/characters`;
     const res = await axios.get(url);
     const characterData = res.data; // the brackeet makes sure you acces the info inside the data array it fetches 
     let inputValue = searchInput.value
     const filterCharacter = characterData.filter(character => character.name.toLowerCase().includes(inputValue.toLowerCase()));
-    console.log(filterCharacter);
+    fav = filterCharacter;
+    favCharacter = fav;
     showCharacterData(filterCharacter);
+    return favCharacter;
   } catch (error) {
     displayError();
   }
@@ -101,6 +106,29 @@ function handleSubmit(event) {
   book.style.display = "block"; 
   }
 }
+
+let favArray;
+favorite.addEventListener("click", handleFavorite);
+function handleFavorite(event) {
+  event.preventDefault();
+  if (searchInput.value !== "") {
+    favArray = favCharacter;
+  }
+  return favArray;
+}
+
+showFavorite.addEventListener("click", handleShow);
+function handleShow(event) {
+  event.preventDefault();
+listCharacter(favArray)
+  removeCharacter();
+  removeHouse();
+  removeText();
+  const fave = document.querySelector(".character-list");
+  fave.style.display = "block";
+  }
+
+
 
 function removeCharacter() {
   characterDiv.innerHTML = "";
