@@ -126,7 +126,7 @@
 | Dec 14 | HTML Setup/ Js setup/ Result from Api/ Pseudocode | complete |
 | Dec 15 | MVP implimantation/ Post MVP                      | complete |
 | Dec 16 | CSS styling/ add more Post MVP if possible        | complete |
-| Dec 17 | Presentations                                     |
+| Dec 17 | Presentations                                     | complete |
 
 ### Priority Matrix:
 

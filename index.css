@@ -41,7 +41,7 @@ h3{
   justify-content: center;
   position: absolute;
   top: 1%;
-  left: 35%;
+  left: 36%;
   max-width: 350px;
 }
 
@@ -124,6 +124,14 @@ h3{
   body{
     color: red !important;
   }
+  body {
+    background-image: url("./assets/HARRY.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
 
   .houseImage{
   max-height: 100px;
@@ -154,7 +162,7 @@ h3{
   flex-flow: wrap column;
   position: absolute;
   top: 20%;
-  left: 14%;
+  left: 16%;
   max-width: 188px;
 }
 
@@ -166,7 +174,11 @@ h3{
 #text-info{
   flex-wrap: wrap;
   position: absolute;
-  left: 54%; 
-  top: 45%;
+  left: 56%; 
+  top: 44%;
+}
+.character-list{
+  bottom: 30px;
+  margin: 0px;
 }
     }

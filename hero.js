@@ -7,17 +7,14 @@ const favorite = document.querySelector("#heart");
 const showFavorite = document.querySelector("#fav-button");
 let favCharacter = [];
 
-async function listCharacter(fav) {
+async function listCharacter() {
   try {
     const url = `https://hp-api.herokuapp.com/api/characters`;
     const res = await axios.get(url);
     const characterData = res.data; // the brackeet makes sure you acces the info inside the data array it fetches 
     let inputValue = searchInput.value
     const filterCharacter = characterData.filter(character => character.name.toLowerCase().includes(inputValue.toLowerCase()));
-    fav = filterCharacter;
-    favCharacter = fav;
     showCharacterData(filterCharacter);
-    return favCharacter;
   } catch (error) {
     displayError();
   }
@@ -107,20 +104,23 @@ function handleSubmit(event) {
   }
 }
 
+
+
 let favArray;
+
 favorite.addEventListener("click", handleFavorite);
 function handleFavorite(event) {
   event.preventDefault();
   if (searchInput.value !== "") {
-    favArray = favCharacter;
+    favArray.push(favCharacter);
+    console.log(favArray);
+    // return favArray;
   }
-  return favArray;
 }
-
 showFavorite.addEventListener("click", handleShow);
 function handleShow(event) {
   event.preventDefault();
-listCharacter(favArray)
+  showCharacterData(favArray)
   removeCharacter();
   removeHouse();
   removeText();
